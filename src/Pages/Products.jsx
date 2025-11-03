@@ -84,11 +84,11 @@ export default function Products({ onAddToCart }) {
 
   return (
     <div className="min-h-screen bg-linear-to-b from-pink-100 via-pink-50 to-white py-24 px-6">
-      <h2 className="text-center text-4xl font-bold text-gray-800 mt-12">
+      <h2 className="text-center text-2xl font-bold text-gray-800 mt-1">
          Daniel’s Artworks Gallery
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mt-20 hover:scale-75ale-">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mt-10 hover:scale-75ale-">
         {artworks.map((art) => (
           <div
             key={art.id}
@@ -112,7 +112,7 @@ export default function Products({ onAddToCart }) {
                 </span>
                 <button
                   onClick={() => onAddToCart(art)}
-                  className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full transition-all"
+                  className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 md:px-3  md:text-[12px] text-sm rounded-full transition-all"
                 >
                   Add to Cart
                 </button>

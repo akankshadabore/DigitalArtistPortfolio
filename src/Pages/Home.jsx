@@ -26,12 +26,12 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-pink-100 via-pink-50 to-white text-gray-800 flex flex-col items-center justify-center px-6 py-12">
+    <div className="min-h-screen bg-linear-to-b from-pink-100 via-pink-50 to-white text-gray-800 flex flex-col items-center justify-center px-6 mt-1">
       <div className="text-center max-w-3xl mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <h1 className="text-xl md:text-5xl font-bold mb-6">
            Hi, I’m Daniel — Digital Artist from Pune, Maharashtra
         </h1>
-        <p className="text-lg md:text-xl leading-relaxed mb-8">
+        <p className="text-sm md:text-xl leading-relaxed mb-8">
           I have over <span className="font-semibold">9+ years</span> of
           experience in creating stunning{" "}
           <span className="text-pink-600 font-medium">
@@ -46,7 +46,7 @@ export default function Home() {
 
         <Link
           to="/products"
-          className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300"
+          className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 text-[12px] sm:text-lg rounded-full shadow-lg transition-all duration-300"
         >
           View My Artworks
         </Link>
@@ -56,7 +56,7 @@ export default function Home() {
         {artworks.map((art) => (
           <div
             key={art.id}
-            className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
+            className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg hover:scale-105 transition-all"
           >
             <img
               src={art.image}
@@ -64,7 +64,7 @@ export default function Home() {
               className="w-full h-65 object-cover"
             />
             <div className="p-4 bg-white">
-              <h3 className="font-semibold text-lg">{art.title}</h3>
+              <h3 className="font-semibold text-md">{art.title}</h3>
               <p className="text-pink-600 font-medium">₹{art.price}</p>
             </div>
           </div>

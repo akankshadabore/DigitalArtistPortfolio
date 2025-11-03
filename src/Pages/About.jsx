@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <div className="min-h-screen bg-linear-to-b from-pink-100 via-pink-50 to-white py-24 px-6 flex items-center justify-center">
-      <div className="max-w-5xl  rounded-md p-10 flex flex-col md:flex-row items-center gap-10">
+      <div className="max-w-8xl  rounded-md md:p-10 flex flex-col lg:flex-row items-center  gap-20">
         <img
           src="https://images.unsplash.com/photo-1695843126492-8d720b51077f?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=600"
           alt="Daniel Digital Artist"
-          className="rounded-2xl shadow-lg w-full md:w-1/2 object-cover hover:scale-105 transition-all"
+          className="rounded-2xl shadow-lg w-full md:w-1/1 lg:w-1/3 object-cover hover:scale-105 transition-all"
         />
         <div className="flex-1">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-xl sm:text-lg md:text-xl  font-bold text-gray-800 mb-4">
             Hi, I’m <span className="text-pink-600">Daniel</span> 👋
           </h1>
-          <p className="text-gray-700 text-lg leading-relaxed mb-6">
+          <p className="text-gray-700 text-md md:text-3xl leading-relaxed mb-6">
             I’m a <span className="font-semibold text-pink-600">Digital Artist</span> 
             from <span className="font-medium">Pune, Maharashtra</span> with over{" "}
             <span className="font-semibold">9+ years</span> of experience in creating 
@@ -21,13 +21,13 @@ export default function About() {
             and <span className="text-pink-600 font-medium">concept designs.</span>
           </p>
 
-          <p className="text-gray-700 text-lg leading-relaxed mb-6">
+          <p className="text-gray-700 text-md leading-relaxed md:text-lg mb-6">
             My passion lies in blending imagination with digital creativity. I work with 
             vibrant colors, bold textures, and expressive compositions to create unique art 
             pieces that inspire emotion and storytelling.
           </p>
 
-          <p className="text-gray-700 text-lg leading-relaxed mb-6">
+          <p className="text-gray-700 text-md leading-relaxed md:text-lg mb-6">
             Apart from my personal projects, I also take{" "}
             <span className="font-semibold text-pink-600">
               custom art commissions
@@ -37,8 +37,8 @@ export default function About() {
             detail, dedication, and emotion.
           </p>
           <div className="mt-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">My Skills</h2>
-            <ul className="grid grid-cols-2 gap-3 text-gray-700">
+            <h2 className="text-xl font-semibold text-gray-800 mb-3">My Skills</h2>
+            <ul className="grid grid-cols-2 gap-3 text-gray-700 md:text-lg">
               <li>🎨 Digital Painting</li>
               <li>🖌️ Illustration & Sketching</li>
               <li>💡 Concept Art</li>
@@ -50,13 +50,13 @@ export default function About() {
           <div className="mt-10 flex gap-4">
             <Link
               to="/products"
-              className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-all"
+              className="bg-pink-500 hover:bg-pink-600 text-white px-3 py-4 lg:px-3 lg:py-4 text-[14px] rounded-full text-center font-medium shadow-lg transition-all"
             >
               View My Artworks
             </Link>
             <a
               href="mailto:daniel.artworks@example.com"
-              className="border-2 border-pink-500 text-pink-600 hover:bg-pink-500 hover:text-white px-6 py-3 rounded-full font-medium shadow-lg transition-all"
+              className="border-2 border-pink-500 text-pink-600 hover:bg-pink-500 hover:text-white px-6 py-3 text-[14px] md:px-8 text-center rounded-full font-medium shadow-lg transition-all"
             >
               Hire Me
             </a>
