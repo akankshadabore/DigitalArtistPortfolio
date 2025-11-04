@@ -84,11 +84,11 @@ export default function Products({ onAddToCart }) {
 
   return (
     <div className="min-h-screen bg-linear-to-b from-pink-100 via-pink-50 to-white py-24 px-6">
-      <h2 className="text-center text-2xl font-bold text-gray-800 mt-1">
+      <h2 className="text-center text-2xl md:text-4xl font-bold text-gray-800 mt-6">
          Daniel’s Artworks Gallery
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mt-10 hover:scale-75ale-">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mt-14 hover:scale-75ale-">
         {artworks.map((art) => (
           <div
             key={art.id}

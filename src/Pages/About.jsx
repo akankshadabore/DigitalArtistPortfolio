@@ -10,10 +10,10 @@ export default function About() {
           className="rounded-2xl shadow-lg w-full md:w-1/1 lg:w-1/3 object-cover hover:scale-105 transition-all"
         />
         <div className="flex-1">
-          <h1 className="text-xl sm:text-lg md:text-xl  font-bold text-gray-800 mb-4">
+          <h1 className="text-xl sm:text-lg md:text-3xl  font-bold text-gray-800 mb-4">
             Hi, I’m <span className="text-pink-600">Daniel</span> 👋
           </h1>
-          <p className="text-gray-700 text-md md:text-3xl leading-relaxed mb-6">
+          <p className="text-gray-700 text-md md:text-xl leading-relaxed mb-6">
             I’m a <span className="font-semibold text-pink-600">Digital Artist</span> 
             from <span className="font-medium">Pune, Maharashtra</span> with over{" "}
             <span className="font-semibold">9+ years</span> of experience in creating 
@@ -21,13 +21,13 @@ export default function About() {
             and <span className="text-pink-600 font-medium">concept designs.</span>
           </p>
 
-          <p className="text-gray-700 text-md leading-relaxed md:text-lg mb-6">
+          <p className="text-gray-700 text-md leading-relaxed md:text-md mb-6">
             My passion lies in blending imagination with digital creativity. I work with 
             vibrant colors, bold textures, and expressive compositions to create unique art 
             pieces that inspire emotion and storytelling.
           </p>
 
-          <p className="text-gray-700 text-md leading-relaxed md:text-lg mb-6">
+          <p className="text-gray-700 text-md leading-relaxed md:text-md mb-6">
             Apart from my personal projects, I also take{" "}
             <span className="font-semibold text-pink-600">
               custom art commissions
@@ -38,7 +38,7 @@ export default function About() {
           </p>
           <div className="mt-8">
             <h2 className="text-xl font-semibold text-gray-800 mb-3">My Skills</h2>
-            <ul className="grid grid-cols-2 gap-3 text-gray-700 md:text-lg">
+            <ul className="grid grid-cols-2 gap-3 text-gray-700 md:text-md">
               <li>🎨 Digital Painting</li>
               <li>🖌️ Illustration & Sketching</li>
               <li>💡 Concept Art</li>

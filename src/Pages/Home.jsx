@@ -26,7 +26,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-pink-100 via-pink-50 to-white text-gray-800 flex flex-col items-center justify-center px-6 mt-1">
+    <div className="min-h-screen bg-linear-to-b from-pink-100 via-pink-50 to-white text-gray-800 flex flex-col items-center justify-center px-6 mt-12">
       <div className="text-center max-w-3xl mb-16">
         <h1 className="text-xl md:text-5xl font-bold mb-6">
            Hi, I’m Daniel — Digital Artist from Pune, Maharashtra
