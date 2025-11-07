@@ -27,11 +27,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-linear-to-b from-pink-100 via-pink-50 to-white text-gray-800 flex flex-col items-center justify-center px-6 mt-12">
-      <div className="text-center max-w-3xl mb-16">
-        <h1 className="text-xl md:text-5xl font-bold mb-6">
+      <div className="text-center max-w-3xl mb-6 md:mb-16">
+        <h1 className="text-lg md:text-5xl font-bold mb-3 md:mb-6">
            Hi, I’m Daniel — Digital Artist from Pune, Maharashtra
         </h1>
-        <p className="text-sm md:text-xl leading-relaxed mb-8">
+        <p className="text-sm md:text-xl leading-relaxed mb-5 md:mb-8">
           I have over <span className="font-semibold">9+ years</span> of
           experience in creating stunning{" "}
           <span className="text-pink-600 font-medium">
@@ -46,13 +46,13 @@ export default function Home() {
 
         <Link
           to="/products"
-          className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 text-[12px] sm:text-lg rounded-full shadow-lg transition-all duration-300"
+          className="bg-pink-500 hover:bg-pink-600 text-white px-3 py-2 md:px-6 md:py-3 text-[12px] sm:text-lg rounded-full shadow-lg transition-all duration-300"
         >
           View My Artworks
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-6">
         {artworks.map((art) => (
           <div
             key={art.id}
@@ -61,10 +61,10 @@ export default function Home() {
             <img
               src={art.image}
               alt={art.title}
-              className="w-full h-65 object-cover"
+              className="w-[400px] h-30 md:w-full md:h-65 object-cover"
             />
-            <div className="p-4 bg-white">
-              <h3 className="font-semibold text-md">{art.title}</h3>
+            <div className="p-3 md:p-4 bg-white">
+              <h3 className="font-semibold text-sm md:text-md">{art.title}</h3>
               <p className="text-pink-600 font-medium">₹{art.price}</p>
             </div>
           </div>
